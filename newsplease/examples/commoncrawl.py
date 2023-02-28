@@ -54,10 +54,10 @@ my_filter_end_date = None  # datetime.datetime(2016, 12, 31)
 # articles from that date. Instead, you must assume that the warc file can contain articles
 # from ANY time before the warc file was published, e.g., a warc file published in August 2020
 # may contain news articles from December 2016.
-my_warc_files_start_date = None # example: datetime.datetime(2020, 3, 1)
-my_warc_files_end_date = None # example: datetime.datetime(2020, 3, 2)
+my_warc_files_start_date = datetime.datetime(2023, 2, 20)
+my_warc_files_end_date = datetime.datetime(2020, 2, 25)
 # if date filtering is strict and news-please could not detect the date of an article, the article will be discarded
-my_filter_strict_date = True
+my_filter_strict_date = False
 # if True, the script checks whether a file has been downloaded already and uses that file instead of downloading
 # again. Note that there is no check whether the file has been downloaded completely or is valid!
 my_reuse_previously_downloaded_files = True
